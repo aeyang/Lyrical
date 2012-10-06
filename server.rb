@@ -10,8 +10,8 @@ get '/' do
                                                            :meta_data => lyrics[:meta_data]}
   else
     erb :lyrics, :layout => :"layouts/layout", :locals => {:title => lyrics[:meta_data][:name], 
-                                                                            :lyrics => lyrics[:lyrics], 
-                                                                            :meta_data => lyrics[:meta_data]}
+                                                           :lyrics => lyrics[:lyrics], 
+                                                           :meta_data => lyrics[:meta_data]}
   end
 end
 

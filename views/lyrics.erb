@@ -1,0 +1,15 @@
+<div class="content">
+	<div id="title" class="span9 offset1">
+		<h3> <%= if lyrics == '' then "Apologies! i couldn't find lyrics for: #{meta_data[:name]}" else meta_data[:name]
+			end %> </h3>
+	</div>
+	<div id="lyrics" class="span9 offset1">
+		<pre>
+			<%= lyrics %>
+		</pre>
+	</div>
+	<div id="meta" class="span9">
+		<p id="meta_p"> by </p> <h3><%=meta_data[:artist]%></h3>  <p id="meta_p">from</p>  <h3><%=meta_data[:album]%></h3> 
+		<img src=<%= meta_data[:pic_url] %> class='pull-left' id="track_picture">
+	</div>
+</div>

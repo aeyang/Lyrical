@@ -16,7 +16,7 @@ get '/' do
 end
 
 get '/about' do 
-  erb :about
+  erb :about, :layout => :"layouts/layout", :locals => {:title => "About"}
 end
 
 not_found do 
